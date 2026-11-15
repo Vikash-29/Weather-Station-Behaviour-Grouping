@@ -1,0 +1,28 @@
+/* Weather-Station Behaviour Grouping dashboard theme */
+:root { --navy:#0f1b2d; --navy2:#16263d; --teal:#0f766e; --teal2:#14b8a6; --ink:#1e293b; --muted:#64748b;
+        --card:#ffffff; --bg:#f4f6fa; --line:#e2e8f0; --warn:#b45309; --bad:#b91c1c; --ok:#15803d; }
+.stApp { background: var(--bg); }
+.block-container { padding-top: 1.6rem; max-width: 1350px; }
+section[data-testid="stSidebar"] { background: linear-gradient(180deg, var(--navy) 0%, var(--navy2) 100%); }
+section[data-testid="stSidebar"] * { color: #e2e8f0 !important; }
+section[data-testid="stSidebar"] .stRadio label { padding: 6px 4px; }
+.brand { font-size: 1.15rem; font-weight: 700; letter-spacing: .2px; margin-bottom: 2px; }
+.brand-sub { font-size: .78rem; color: #94a3b8 !important; margin-bottom: 14px; }
+.page-title { font-size: 1.7rem; font-weight: 700; color: var(--ink); margin: 0 0 .2rem 0; }
+.page-sub { color: var(--muted); margin-bottom: 1.1rem; }
+.kpi { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px;
+       box-shadow: 0 1px 3px rgba(15,23,42,.06); height: 100%; }
+.kpi .lab { font-size: .78rem; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); }
+.kpi .val { font-size: 1.9rem; font-weight: 700; color: var(--ink); line-height: 1.2; }
+.kpi .sub { font-size: .8rem; color: var(--muted); }
+.kpi.accent { border-left: 5px solid var(--teal2); }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px;
+         box-shadow: 0 1px 3px rgba(15,23,42,.05); margin-bottom: 14px; }
+.banner { border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; border: 1px solid; font-size: .95rem; }
+.banner.info { background:#eff6ff; border-color:#bfdbfe; color:#1e40af; }
+.banner.warn { background:#fffbeb; border-color:#fde68a; color:var(--warn); }
+.banner.bad  { background:#fef2f2; border-color:#fecaca; color:var(--bad); }
+.banner.ok   { background:#f0fdf4; border-color:#bbf7d0; color:var(--ok); }
+.finding { padding: 8px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+.finding:last-child { border-bottom: none; }
+div[data-testid="stDataFrame"] { border: 1px solid var(--line); border-radius: 10px; }

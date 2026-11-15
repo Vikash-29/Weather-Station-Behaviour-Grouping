@@ -1,0 +1,10 @@
+[STAGE 1/7] Loading NOAA GSOD station files (local files only)
+[STAGE 2/7] Cleaning daily observations
+[STAGE 3/7] Aggregating to station-level features
+138 stations kept (37 excluded for < 250 valid temperature days); 17 clustering features
+[STAGE 4/7] Imputing and standardising features
+[STAGE 5/7] Fitting K-Means and K-Medians for every K
+[STAGE 6/7] Stability analysis and selection of K (can take several minutes)
+Selected K = 5 (elbow K = 6)
+[STAGE 7/7] Profiling clusters, saving tables, figures and report
+Done. See outputs/ and final_report.md

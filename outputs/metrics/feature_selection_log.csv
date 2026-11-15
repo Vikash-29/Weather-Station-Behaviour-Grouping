@@ -1,0 +1,22 @@
+feature,decision,reason
+precip_observed_total_mm,dropped,100% of stations missing (> 40%)
+rainy_day_frac,dropped,100% of stations missing (> 40%)
+precip_intensity_mm,dropped,100% of stations missing (> 40%)
+temp_mean,kept,0% missing -> median-imputed
+temp_std,kept,0% missing -> median-imputed
+temp_min,kept,0% missing -> median-imputed
+temp_max,kept,0% missing -> median-imputed
+dtr_mean,kept,0% missing -> median-imputed
+rh_mean,kept,0% missing -> median-imputed
+rh_std,kept,0% missing -> median-imputed
+dewp_dep_mean,dropped,|r| = 0.993 with rh_mean (> 0.97)
+wind_mean,kept,0% missing -> median-imputed
+wind_std,kept,0% missing -> median-imputed
+wind_peak,kept,0% missing -> median-imputed
+slp_mean,kept,18% missing -> median-imputed
+slp_std,kept,20% missing -> median-imputed
+stp_mean,kept,0% missing -> median-imputed
+stp_std,kept,0% missing -> median-imputed
+visib_mean,kept,0% missing -> median-imputed
+fog_reported_frac,kept,0% missing -> median-imputed
+thunder_reported_frac,kept,0% missing -> median-imputed

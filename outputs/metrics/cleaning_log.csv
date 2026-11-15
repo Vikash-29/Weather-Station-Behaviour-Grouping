@@ -1,0 +1,22 @@
+step,count,note
+raw daily records,49818,rows read from station files
+unparseable dates removed,0,rows
+duplicate station-days removed,0,rows (same STATION and DATE)
+TEMP: missing-value sentinel -> NaN,0,values >= 9999.9
+DEWP: missing-value sentinel -> NaN,42,values >= 9999.9
+SLP: missing-value sentinel -> NaN,15663,values >= 9999.9
+STP: missing-value sentinel -> NaN,0,values >= 9999.9
+VISIB: missing-value sentinel -> NaN,0,values >= 999.9
+WDSP: missing-value sentinel -> NaN,332,values >= 999.9
+MXSPD: missing-value sentinel -> NaN,4385,values >= 999.9
+GUST: missing-value sentinel -> NaN,48577,values >= 999.9
+MAX: missing-value sentinel -> NaN,2,values >= 9999.9
+MIN: missing-value sentinel -> NaN,4,values >= 9999.9
+PRCP: missing-value sentinel -> NaN,1300,values >= 99.99
+SNDP: missing-value sentinel -> NaN,49818,values >= 999.9
+PRCP flag 'I' (no precipitation report) -> NaN,31113,treated as missing
+"PRCP flag 'H' (0 reported, but precipitation seen in hourly obs) -> NaN",28,ambiguous/incomplete day: not a confirmed dry day; counted separately as dq_prcp_flag_h_frac
+stp_hpa: implausible value -> NaN,1246,"outside [300, 1100]"
+daily max < daily min -> both NaN,0,inconsistent record
+dew point > temperature + 0.5 C -> dew point NaN,0,physically inconsistent
+clean daily records kept,49818,rows (outliers are not removed unless implausible)
